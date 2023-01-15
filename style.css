@@ -67,7 +67,8 @@ nav {
     color: #131313;
     transform: color 0.4s;
 }
-.nav-tittle:hover{
+
+.nav-tittle:hover {
     color: #FF900E;
 }
 
@@ -88,7 +89,7 @@ nav ul li {
     border: 1px solid #fff3e5;
     cursor: pointer;
     padding: 10px 20px;
-    transition:border 0.3s;
+    transition: border 0.3s;
 }
 
 nav ul li:hover {
@@ -358,3 +359,78 @@ nav ul li:hover {
 }
 
 /* for mobile devices */
+@media screen and (max-width:576px) {
+    header, main {
+        padding: 5px;
+    }
+
+    nav {
+        text-align: center;
+        display: block;
+
+    }
+
+    nav ul {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    nav ul li {
+        padding: 5px 10px;
+    }
+
+
+   
+    .banner img {
+        width: 100%;
+    }
+
+    .loveable-feature, .our-feature, .fact-cards {
+        flex-direction: column;
+        gap: 24px;
+        padding: 5px;
+    }
+
+    .loveable-image {
+        width: 100%;
+    }
+
+    .loveable-feature>article, .loveable-image img, .our-work div {
+        width: 100%;
+    }
+
+    .loveable-feature .btn-primary {
+        font-size: 45px;
+        line-height: 30px;
+        padding: 15px;
+        transform: translate(0, -60%);
+    }
+
+    .our-feature .image-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+
+    .our-work .work-imgs {
+       grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+
+    .our-work {
+        flex-direction: column-reverse;
+        gap: 24px;
+        padding: 5px;
+    }
+
+    .sponsors-imgs{
+        flex-direction: column;
+        padding: 10px;
+        gap: 40px;
+        align-items: center;
+    }
+    .sponsors-imgs img{
+        max-width: 70%;
+    }
+
+
+}
