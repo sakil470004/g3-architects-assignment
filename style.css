@@ -296,12 +296,14 @@ nav ul li:hover {
     border: 1px solid rgba(0, 0, 0, 0.06);
     /* padding: 46px 36px 60px 36px; */
     border-radius: 8px;
-    transition: border 0.3s;
+    transition: border 0.3s, transform 0.3s;
+
     cursor: pointer;
 }
 
 .fact-card:hover {
     border: 1px solid #FF900E;
+    transform: translate(0, -20%);
 }
 
 .fact-card img {
@@ -380,7 +382,7 @@ nav ul li:hover {
     }
 
 
-   
+
     .banner img {
         width: 100%;
     }
@@ -412,7 +414,7 @@ nav ul li:hover {
     }
 
     .our-work .work-imgs {
-       grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 24px;
     }
 
@@ -422,13 +424,14 @@ nav ul li:hover {
         padding: 5px;
     }
 
-    .sponsors-imgs{
+    .sponsors-imgs {
         flex-direction: column;
         padding: 10px;
         gap: 40px;
         align-items: center;
     }
-    .sponsors-imgs img{
+
+    .sponsors-imgs img {
         max-width: 70%;
     }
 
