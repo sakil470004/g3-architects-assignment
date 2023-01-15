@@ -15,7 +15,15 @@
     padding: 20px 25px;
     border: none;
     background: #FF900E;
+    border: 1px solid #FF900E;
     border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    color: #131313;
+    background: #FFFFFF;
+    border: 1px solid #FF900E;
 }
 
 .fit-width {
@@ -57,16 +65,34 @@ nav {
     font-size: 45px;
     line-height: 53px;
     color: #131313;
+    transform: color 0.4s;
+}
+.nav-tittle:hover{
+    color: #FF900E;
 }
 
 nav ul {
     display: flex;
     list-style: none;
+    align-items: center;
     gap: 30px;
     font-weight: 500;
     font-size: 18px;
-    line-height: 26px;
+    /* line-height: 26px; */
     color: #424242;
+
+}
+
+nav ul li {
+    border-radius: 4px;
+    border: 1px solid #fff3e5;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition:border 0.3s;
+}
+
+nav ul li:hover {
+    border: 1px solid #FF900E;
 }
 
 /* banner */
@@ -113,7 +139,7 @@ nav ul {
     gap: 24px;
 }
 
-.our-feature .details-container h3 {
+.details-container h3 {
     font-weight: 500;
     font-size: 45px;
     line-height: 53px;
@@ -138,6 +164,45 @@ nav ul {
     line-height: 26px;
     color: #727272;
 
+}
+
+/* quick look of our work */
+
+.our-work div {
+    width: 50%;
+}
+
+.our-work {
+    max-width: 1318px;
+    margin: 85px auto 130px;
+    gap: 73px;
+    display: flex;
+    align-items: center;
+}
+
+.our-work .work-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.work-imgs img {
+    border-radius: 4px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.our-work h3 span:nth-child(2) {
+    color: #FF900E;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-style: italic;
+}
+
+.our-work .btn-primary {
+    margin-top: 24px;
 }
 
 /* feature you love and enjoy */
@@ -291,3 +356,5 @@ nav ul {
     padding: 39px 0px;
     margin-top: 130px;
 }
+
+/* for mobile devices */
